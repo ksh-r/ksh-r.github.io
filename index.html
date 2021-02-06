@@ -14,12 +14,36 @@
 </head>
 
 <body data-barba="wrapper">
+  <div id="intro" style="visibility: hidden;">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg id="logo" viewBox="0 0 1200 1200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient x1="-1783.8753%" y1="50%" x2="712.259393%" y2="50%" id="logo-linearGradient-1">
+                <stop stop-color="#C9FFBF" offset="0%"></stop>
+                <stop stop-color="#FFAFBD" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient x1="-1777.9616%" y1="50%" x2="1910.46455%" y2="50%" id="logo-linearGradient-2">
+                <stop stop-color="#C9FFBF" offset="0%"></stop>
+                <stop stop-color="#FFAFBD" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient x1="-22.1697604%" y1="50%" x2="122.432184%" y2="50%" id="logo-linearGradient-3">
+                <stop stop-color="#C9FFBF" offset="0%"></stop>
+                <stop stop-color="#FFAFBD" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <g id="logo-grp">
+            <polygon id="logo-fill-1" fill="url(#logo-linearGradient-1)" points="973.8818 555.7368 973.8818 625.4278 1043.5728 555.7368"></polygon>
+            <polygon id="logo-fill-2" fill="url(#logo-linearGradient-2)" points="568.9219 555.7368 568.9219 625.4278 616.0099 555.7368"></polygon>
+            <path d="M0,1200 L1200,1200 L1200,0 L0,0 L0,1200 Z M710.187,555.737 L710.187,457.793 L757.275,410.705 L757.275,619.777 L710.187,666.865 L710.187,599.058 L616.009,599.058 L616.009,697.002 L568.922,744.091 L568.922,625.427 L521.833,672.516 L408.82,672.516 L423.889,625.427 L499.231,625.427 L521.833,600.942 L433.307,600.942 L446.492,555.737 L568.922,555.737 L616.009,508.649 L616.009,555.737 L710.187,555.737 Z M62.25,672.516 L169.612,565.154 L86.736,484.163 L86.736,414.472 L228.001,553.853 L228.001,484.163 L275.089,484.163 L275.089,672.516 L228.001,672.516 L228.001,625.427 L205.399,600.942 L62.25,744.091 L62.25,672.516 Z M469.094,484.163 L604.709,484.163 L557.62,531.251 L454.026,531.251 L469.094,484.163 Z M303.343,484.163 L440.841,484.163 L425.773,531.251 L303.343,531.251 L303.343,484.163 Z M926.794,508.649 L1115.148,508.649 L1115.148,555.737 L1043.573,627.311 L1137.75,719.604 L1137.75,789.296 L973.882,625.427 L973.882,697.002 L926.794,697.002 L926.794,508.649 Z M776.111,508.649 L898.541,508.649 L898.541,697.002 L851.452,697.002 L851.452,555.737 L776.111,555.737 L776.111,508.649 Z M303.343,553.853 L418.239,553.853 L403.17,602.825 L303.343,602.825 L303.343,553.853 Z M776.111,606.593 L802.48,580.223 L806.247,580.223 L840.151,614.127 L776.111,678.167 L776.111,606.593 Z M303.343,625.427 L395.636,625.427 L382.451,672.516 L303.343,672.516 L303.343,625.427 Z M761.043,636.729 L761.043,678.167 L719.605,678.167 L761.043,636.729 Z M710.187,693.235 L761.043,693.235 L710.187,744.091 L710.187,693.235 Z" id="logo-fill-3" fill="url(#logo-linearGradient-3)"></path>
+        </g>
+    </svg>
+</div>
   <div id="contain" style="visibility: hidden;" data-barba="container" data-barba-namespace="home">
     <div id="hero-img-div">
       <img id="hero-img" class="hov-elem" src="./images/hero.jpg">
     </div>
-    <div id="hero-title">Keshar<br>Wakharkar</div>
-    <canvas id="Canvas"></canvas>
+    <div id="hero-title" style="visibility: hidden;" class="animate">Keshar<br>Wakharkar</div>
+    <canvas id="Canvas" style="visibility: hidden;" class="animate"></canvas>
     <div id="hero-about" style="visibility: hidden;">
       Hi, my name is Keshar<br>I am a <a>pragmatic</a> UI designer and<br>
       software engineer expertising in <a>front-end</a><br>development. If you'd like me to<br>help you with your
@@ -29,7 +53,7 @@
       <a class="hov-elem" href="./work.html">Work</a><br>
       <a class="hov-elem" href="./about.html">About</a>
     </div>
-    <div id="menu-svg" class="hov-elem">
+    <div id="menu-svg" style="visibility: hidden;" class="animate hov-elem">
       <svg viewBox="0 0 82 42">
         <g stroke-width="1" fill="none" stroke-linecap="square" stroke="#6d6875">
           <line x1="0" y1="0.5" x2="80" y2="0.5" shape-rendering="crispEdges"></line>
@@ -38,6 +62,72 @@
         </g>
       </svg>
     </div>
+    <div id="container-m" class="animate">
+      <div id="head-m">
+          <p>SEE MY</p>
+          <p id="head-work-m">work</p>
+          <p>ON DESKTOP</p>
+      </div>
+      <p id="name-m">
+          Keshar
+          <br>
+          Wakharkar
+      </p>
+      <h4 id="media-m">
+          <a class="g-elem-m" href="mailto:kesharwakharkar@gmail.com" > mail / </a>
+          <a class="g-elem-m" href="https://www.linkedin.com/in/keshar-w-536099146/" target="_blank"> linkedin / </a>
+          <a class="g-elem-m" href="https://drive.google.com/file/d/14KRaVFhqyiHgvc_R-HQz0Qt9uCj9EfLc/view?usp=sharing" target="_blank"> résumé / </a>
+      </h4>
+      <div id="block-1-m" class="block-m">
+          <h4>Education</h4>
+          <div>
+              <p class="date-m">2018 - 2022</p>
+              <p>Bachelor of Technology, Computer Science Engineering</p>
+              <p class="address-m">Indian Institute of Information Technology, Vadodara.</p>
+          </div>
+          <div>
+              <p class="date-m">2017 - 2018</p>
+              <p>Class XII - HSC</p>
+              <p class="address-m">RYK College, Nasik.</p>
+          </div>
+          <div>
+              <p class="date-m">2015 - 2016</p>
+              <p>Class X - ICSE</p>
+              <p class="address-m">Barnes School, Nasik.</p>
+          </div>
+      </div>
+      <div class="block-m">
+          <h4>Skills</h4>
+          <div><p class="address-m">Desktop App Development</p></div>
+          <div><p class="address-m">Web Development</p></div>
+          <div><p class="address-m">UI / UX Design</p></div>
+          <div><p class="address-m">Web Animation</p></div>
+      </div>
+      <div class="block-m">
+          <h4>Tools & Languages</h4>
+          <p class="address-m">Google Cloud Platform</p>
+          <p class="address-m">Blender</p>
+          <p class="address-m">SketchApp</p>
+          <p class="address-m">Adobe Ai / Ps / Ae</p>
+          <p class="address-m">Java / C++</p>
+          <p class="address-m">Python / MATLAB</p>
+          <p class="address-m">HTML / CSS / JS</p>
+          <p class="address-m">LaTeX</p>
+      </div>
+      <div class="block-m">
+          <h4>Interests</h4>
+          <div><p class="address-m">Robotics</p></div>
+          <div><p class="address-m">Graphic Designing</p></div>
+          <div><p class="address-m">Chess & Football</p></div>
+      </div>
+      <div class="block-m" style="visibility: hidden;">
+          <h4>Skills</h4>
+          <div><p class="address-m">Desktop App Development</p></div>
+          <div><p class="address-m">Web Development</p></div>
+          <div><p class="address-m">UI / UX Design</p></div>
+          <div><p class="address-m">Web Animation</p></div>
+      </div>
+  </div>
   </div>
   <div id="pointer-dot"></div>
   <div id="pointer-ring"></div>
